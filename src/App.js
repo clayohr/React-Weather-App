@@ -22,7 +22,7 @@ export default function App() {
        <h3 className="currentTime">Sunday 10:30</h3>
        <div>
         <h1 id="currentWeather">38°</h1>
-        <span class="units"><a href="#" id="faren">F</a>|<a href="#" id="celcius">C</a></span>
+        <span class="units"><a href="/" id="faren">F</a>|<a href="/" id="celcius">C</a></span>
         
        </div>
        <h6 id="description">cloudy
