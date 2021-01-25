@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1,
+h2,
+h3,
+h5,
+h6,
+p,
+a,
+button,
+::placeholder,
+.col, .value, .units {
+  font-family: monospace;
+  text-align: center;
+  color: #463f3a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+  display: block;
+  width: 30px;
+  margin: 0 auto;
 }
+
+body {
+  background: #8a817c;
+}
+
+input {
+  background: #463f3a;
+  border: 1px solid whitesmoke;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 12px;
+}
+i {
+  color: #e0afa0;
+}
+
+button {
+  border: 1px solid whitesmoke;
+  text-align: center;
+  background: #463f3a;
+  padding: 2px 6px 0px;
+  display: inline-block;
+  margin: auto;
+}
+
+h5 {
+  text-align: center;
+  text-decoration: none;
+  color: #463f3a;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke
+  
+}
+
+a:hover {
+  color: whitesmoke;
+}
+.disclaimer {
+  text-align: center;
+  color: whitesmoke;
+  margin: 0 auto;
+}
+.git {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-decoration: underline;
+}
+.city {
+  border: 1px solid whitesmoke;
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: #e0afa0;
+}
+
+.weatherapp {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  margin-top: 20px;
+  border: 1px solid whitesmoke;
+  text-align: center;
+  padding: 20px 0px;
+  background: #463f3a;
+}
+
+.weekly {
+  border: 1px solid whitesmoke;
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 18px;
+  background: #e0afa0;
+}
+.weathergrid {
+  padding-left: 13px;
+}
+.row {
+  padding: 19px 0px;
+  
+}
+.units {
+  display: inline-block;
+  margin-bottom: 10px;
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+::placeholder {
+  text-align: center;
+  color: whitesmoke;
+  padding: 0px 2px;
+}
+
+#location-selector {
+  color: whitesmoke;
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+#search-box {
+  padding: 10px;
+}
+
+#icon {
+  margin: auto;
+  display: inline-block;
+  width: 50px;
+}
+#currentWeather {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#icony {
+  width: 40px;
+}
+
