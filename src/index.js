@@ -7,6 +7,11 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <div>
+      <h5>
+        <a href="https://github.com/clayohr/reactapp">Code by Claire via Github</a>
+      </h5>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
