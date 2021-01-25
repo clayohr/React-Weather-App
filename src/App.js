@@ -1,5 +1,5 @@
 
-import axios from 'axios';
+
 import "./index.css";
 import React from "react";
 
@@ -18,7 +18,7 @@ export default function App() {
   </form>
    </div>
    <div class="weekly">        
-       <img id="icon" src="http://openweathermap.org/img/wn/03d@2x.png"/>
+       <img id="icon" alt ="weather icon"src="http://openweathermap.org/img/wn/03d@2x.png"/>
        <h3 className="currentTime">Sunday 10:30</h3>
        <div>
         <h1 id="currentWeather">38°</h1>
@@ -34,7 +34,7 @@ export default function App() {
             Monday
         </div>
         <div class="col">
-          <img id="icony" src="http://openweathermap.org/img/wn/10d@2x.png" />
+          <img id="icony" alt ="weather icon" src="http://openweathermap.org/img/wn/10d@2x.png" />
         </div>
         <div class="col">
             30°
@@ -45,7 +45,7 @@ export default function App() {
           Tuesday
         </div>
         <div class="col">
-            <img id="icony" src="http://openweathermap.org/img/wn/03d@2x.png" />
+            <img id="icony" alt ="weather icon" src="http://openweathermap.org/img/wn/03d@2x.png" />
         </div>
         <div class="col">
           28°
@@ -56,7 +56,7 @@ export default function App() {
           Wednesday
         </div>
         <div class="col">
-          <img id="icony" src="http://openweathermap.org/img/wn/01d@2x.png" />
+          <img id="icony" alt ="weather icon" src="http://openweathermap.org/img/wn/01d@2x.png" />
         </div>
         <div class="col">
           36°
@@ -67,7 +67,7 @@ export default function App() {
           Thursday
         </div>
         <div class="col">
-          <img id="icony" src="http://openweathermap.org/img/wn/10d@2x.png" />
+          <img id="icony" alt ="weather icon" src="http://openweathermap.org/img/wn/10d@2x.png" />
         </div>
         <div class="col">
           40°
@@ -78,7 +78,7 @@ export default function App() {
           Friday
         </div>
         <div class="col">
-        <img id="icony" src="http://openweathermap.org/img/wn/03d@2x.png" />
+        <img id="icony" alt ="weather icon" src="http://openweathermap.org/img/wn/03d@2x.png" />
         </div>
         <div class="col">
           33°
