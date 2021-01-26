@@ -15,11 +15,11 @@ export default function WeatherForecast(props) {
         console.log(forecast);
         return ( 
         <div className="weathergrid" id="weatherforecast">
-        <WeeklyForecast data={forecast.list[4]}/>
-        <WeeklyForecast data={forecast.list[12]}/>
-        <WeeklyForecast data={forecast.list[20]}/>
-        <WeeklyForecast data={forecast.list[28]}/>
-        <WeeklyForecast data={forecast.list[36]}/>
+        <WeeklyForecast data={forecast.list[6]}/>
+        <WeeklyForecast data={forecast.list[14]}/>
+        <WeeklyForecast data={forecast.list[22]}/>
+        <WeeklyForecast data={forecast.list[30]}/>
+        <WeeklyForecast data={forecast.list[38]}/>
     
     </div>
     );

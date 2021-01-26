@@ -127,7 +127,8 @@ a:hover {
 }
 
 #search-box {
-  padding: 10px;
+  padding: 9px;
+  padding-top: 4px;
 }
 
 #icon {
@@ -142,5 +143,12 @@ a:hover {
 
 #icony {
   width: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+#gobox {
+  margin: 3px;
+  text-align: center;
 }
 

@@ -47,7 +47,7 @@ export default function App(props) {
    <h1 id="location">{weatherData.city}</h1>
    <form id="search-box" onSubmit={handleSubmit}>
    <input type="search" id="city-search" placeholder="Search for your city" onChange={handleCityChange}/>
-   <input type="submit" value="go" /> 
+   <input type="submit" value="go" id="gobox"/> 
   </form>
   </div>
   <div className="weekly">
