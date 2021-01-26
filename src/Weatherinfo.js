@@ -5,7 +5,7 @@ export default function Weatherinfo(props) {
     return (
         <div className = "WeatherInfo">
 <div class="weekly">        
-       <img id="icon" alt ="weather icon"src="http://openweathermap.org/img/wn/03d@2x.png"/>
+       <img id="icon" alt ="weather icon"src={props.data.iconUrl}/>
        <h3 className="currentTime">
          <FormattedDate date={props.data.date}/>
         </h3>
