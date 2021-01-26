@@ -1,10 +1,24 @@
-
-
 import "./index.css";
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 export default function App() {
-  return (
+  const [weatherData, setWeatherData] = useState({ ready: false });
+  function handleResponse(response) {
+    console.log(response.data);
+    setWeatherData({
+      ready: true,
+      temperature: Math.round(response.data.main.temp),
+      wind: Math.round(response.data.wind.speed),
+      name: response.data.name,
+      description: response.data.weather[0].description,
+      humidity: response.data.main.humidity
+    })
+    
+  };
+
+  if (weatherData.ready) {
+    return (
     <div className="App">
       <div className="weatherapp">
     <div className="city">
@@ -21,13 +35,16 @@ export default function App() {
        <img id="icon" alt ="weather icon"src="http://openweathermap.org/img/wn/03d@2x.png"/>
        <h3 className="currentTime">Sunday 10:30</h3>
        <div>
-        <h1 id="currentWeather">38°</h1>
+        <h1 id="currentWeather">{weatherData.temperature}°</h1>
         <span class="units"><a href="/" id="faren">F</a>|<a href="/" id="celcius">C</a></span>
         
        </div>
-       <h6 id="description">cloudy
+       <h6 id="description">{weatherData.description}
        <br />
-       wind speed: 4 mph</h6>
+       wind speed: {weatherData.wind} mph
+       <br />
+       humidity: {weatherData.humidity}%</h6>
+       <br />
        <div class="weathergrid" id="weatherforecast">
        <div class="row" >
         <div class="col">
@@ -90,5 +107,13 @@ export default function App() {
     </div>
 
   );
-}
+} else {
+  const apiKey = '6c9b6fab8cba893fa6e820adfa010e87';
+  let city = "Roanoke";
+  let apiUrl = 
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(handleResponse);
 
+  return "Loading...";
+};
+}
