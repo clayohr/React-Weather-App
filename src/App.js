@@ -2,6 +2,7 @@ import "./index.css";
 import React, { useState } from "react";
 import axios from "axios";
 import Weatherinfo from "./Weatherinfo";
+import WeatherForecast from "./WeatherForecast"
 
 export default function App(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -22,7 +23,7 @@ export default function App(props) {
   };
 
   function search() {
-    const apiKey = '6c9b6fab8cba893fa6e820adfa010e87';
+    const apiKey = '331dad2e3eb8553f01516bd2ea4a009e';
     let apiUrl = 
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
@@ -44,18 +45,18 @@ export default function App(props) {
       <div className="weatherapp">
     <div className="city">
    <h1 id="location">{weatherData.city}</h1>
-   <button>
-           <i id="location-selector" className="fas fa-location-arrow"></i>
-   </button>
    <form id="search-box" onSubmit={handleSubmit}>
    <input type="search" id="city-search" placeholder="Search for your city" onChange={handleCityChange}/>
    <input type="submit" value="go" /> 
   </form>
   </div>
+  <div className="weekly">
    <Weatherinfo data={weatherData} />
+   <WeatherForecast city={weatherData.city} />
    </div>
    </div>
-
+   </div>
+   
   );
 } else {
   search();
