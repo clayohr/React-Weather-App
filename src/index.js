@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App defaultCity = "Roanoke"/>
     <div>
       <h5>
         <a href="https://github.com/clayohr/reactapp">Code by Claire via Github</a>
